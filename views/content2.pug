@@ -1,0 +1,14 @@
+extends ./main.pug
+block content2
+
+    .content2
+        form(action='/savesetting', method='post')
+            p Your id: #{id}
+            p Your name: 
+            input(type='text', name='username', placeholder=name, value=name, required)
+            p Your password:
+            input(type='password', name='new_password', placeholder='new password', required)
+            p Your email:
+            input(type='text', name='email' placeholder=email, value=email, required)
+            br
+            button Save

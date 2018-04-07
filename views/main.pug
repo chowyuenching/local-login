@@ -1,0 +1,19 @@
+extends ./head.pug
+block content
+
+    .layout
+        .menubar
+            .avatar
+            .profile
+                .detail #{id} 
+                hr
+                .detail #{name} 
+                hr
+                .detail #{email}
+                hr
+            .setting
+                form(action='/setting', method='get')
+                    button 
+                        i.fa.fa-cogs
+        
+        block content2
